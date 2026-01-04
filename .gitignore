@@ -1,60 +1,33 @@
 ```
-# Python
-__pycache__/
+# Test dependencies
+tests/requirements.txt
+
+# Python test artifacts
+tests/__pycache__/
 *.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
+__pycache__/
+
+# Logs
 *.log
-.pytest_cache/
-.mypy_cache/
-.hypothesis/
-.DS_Store
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# Environment files
+.env
+.env.local
+*.env.*
 
-# IDE
+# Editor/IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
+*.tmp
 
-# System
-.DS_Store
-Thumbs.db
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
 
-# Environment
-.env
-.env.local
-*.env
-.env.*
+# Python cache
+.pytest_cache/
+.mypy_cache/
 ```
