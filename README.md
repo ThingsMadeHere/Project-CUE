@@ -89,6 +89,26 @@ The model supports multiple training objectives:
 - Primitive grounding loss
 - Contrastive discrimination loss
 
+### Training with Flickr30k Dataset
+
+To train the Universal Compositional Embedder using the Flickr30k dataset:
+
+```python
+from datasets import load_dataset
+
+ds = load_dataset("nlphuji/flickr30k")
+```
+
+The training process aligns image and text embeddings so that the image encoder produces embeddings that match the text encoder's output for the same semantic content. This creates consistent representations across modalities.
+
+The dataset contains:
+- 31,783 images
+- Each image has 5 different captions
+- Total of ~158,915 image-text pairs
+- Diverse set of objects, actions, and scenes
+
+The training objective is to minimize the contrastive loss between matching image-text pairs while maximizing the distance to non-matching pairs.
+
 ## Semantic Properties
 
 - **Inheritance via Cone Containment**: More specific concepts are geometrically contained within more general ones

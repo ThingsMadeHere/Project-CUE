@@ -1,33 +1,48 @@
 ```
-# Test dependencies
-tests/requirements.txt
-
-# Python test artifacts
-tests/__pycache__/
+# Compiled and build artifacts
 *.pyc
 __pycache__/
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.class
+*.out
 
-# Logs
+# Dependencies
+.venv/
+venv/
+env/
+node_modules/
+dist/
+build/
+target/
+.gradle/
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+
+# Logs and temp files
 *.log
+*.tmp
+*.swp
+*.swo
 
-# Environment files
+# Environment
 .env
 .env.local
-*.env.*
+.env.*
 
-# Editor/IDE files
+# Editors
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
 
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Python cache
-.pytest_cache/
-.mypy_cache/
+# System files
+.DS_Store
+Thumbs.db
 ```
